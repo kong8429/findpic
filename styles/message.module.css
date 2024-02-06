@@ -1,0 +1,12 @@
+.container {
+  padding: 0 20rem;
+  min-height: 75vh;
+  position: relative;
+  width: 100%;
+}
+.container .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}/*# sourceMappingURL=message.module.css.map */

@@ -1,0 +1,86 @@
+.loading {
+  font-size: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  animation: rotate 0.5s infinite;
+}
+
+.authorInfo {
+  padding: 0 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authorInfo img {
+  border-radius: 100px;
+  margin-right: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  border-bottom: 1px solid rgb(174, 174, 174);
+}
+.nav .tab {
+  display: block;
+  padding: 0.8rem 0rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  transition: all 0.1s;
+}
+.nav .tab:hover {
+  color: black;
+}
+
+.focus {
+  color: black;
+  border-bottom: 2px solid #000;
+}
+
+@media screen and (max-width: 1024px) {
+  .authorInfo {
+    padding: 0 12rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .authorInfo {
+    padding: 0 4rem;
+  }
+  .authorInfo img {
+    width: 100px;
+  }
+  .authorInfo div h2 {
+    font-size: 1.2rem;
+  }
+  .authorInfo div p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .authorInfo {
+    padding: 0 1rem;
+  }
+  .authorInfo img {
+    width: 60px;
+  }
+  .authorInfo div h2 {
+    font-size: 1rem;
+  }
+  .authorInfo div p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .authorInfo img {
+    width: 36px;
+  }
+  .authorInfo div h2 {
+    font-size: 1rem;
+  }
+  .authorInfo div p {
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=userprofile.module.css.map */

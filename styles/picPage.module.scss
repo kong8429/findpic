@@ -1,0 +1,246 @@
+$primaryPadding: 2rem 10rem;
+$middlePadding: 2rem 3rem;
+$smallPadding: 2rem 1rem;
+
+.picContainer {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  img {
+    width: auto;
+    height: 75vh;
+  }
+}
+
+.picDescription {
+  display: flex;
+  justify-content: space-between;
+  padding: $primaryPadding;
+  .numbers {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    p {
+      margin-right: 5rem;
+      font-size: 1rem;
+    }
+  }
+  button {
+    height: 2rem;
+    padding: 0 1.2rem;
+    border: 1px solid;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: all 0.1s;
+    &:hover {
+      background-color: rgb(220, 220, 220);
+    }
+  }
+  .download {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+  .chooseSize {
+    border-radius: 0 5px 5px 0;
+  }
+  .options {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    scale: 0;
+    transition: all 0.1s;
+
+    .full,
+    .regular,
+    .small {
+      color: black;
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 100%;
+      padding: 5px 15px;
+      transition: all 0.1s;
+      &:hover {
+        background-color: rgb(220, 220, 220);
+      }
+    }
+    .full {
+      border-radius: 5px 5px 0 0;
+    }
+    .regular {
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .small {
+      border-radius: 0 0 5px 5px;
+    }
+  }
+
+  .showUp {
+    scale: 1;
+  }
+}
+
+.description {
+  padding: 0 10rem;
+}
+
+.author {
+  padding: $primaryPadding;
+  display: flex;
+  align-items: center;
+
+  .user {
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50px;
+      width: 36px;
+    }
+
+    p {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .uName {
+      color: black;
+    }
+    .uAcc {
+      color: gray;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.createTime {
+  padding: 0 10rem 2rem;
+}
+
+.picTag {
+  padding: 0 10rem;
+  margin-bottom: 3rem;
+  .tags {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(232, 231, 231);
+    // color: rgb(92, 92, 92);
+    cursor: pointer;
+    transition: all 0.1s;
+    &:hover {
+      background-color: rgb(166, 166, 166);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .picDescription {
+    justify-content: space-evenly;
+    padding: $middlePadding;
+    .numbers {
+      p {
+        margin-right: 3rem;
+      }
+    }
+    button {
+      padding: 0 0.5rem;
+    }
+  }
+  .description {
+    padding: 0 3rem;
+  }
+  .author {
+    padding: $middlePadding;
+    .user {
+      img {
+        border-radius: 50px;
+        width: 24px;
+      }
+
+      p {
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+        text-decoration: none;
+      }
+      .uName {
+        color: black;
+      }
+      .uAcc {
+        color: gray;
+        font-size: 0.6rem;
+      }
+    }
+  }
+  .createTime {
+    padding: 0 3rem 2rem;
+  }
+  .picTag {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .picContainer {
+    img {
+      width: 100vw;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .picDescription {
+    padding: $smallPadding;
+    .numbers {
+      p {
+        margin-right: 1.5rem;
+        font-size: 0.8rem;
+      }
+    }
+    .download {
+      font-size: 0.8rem;
+      border-radius: 5px 0 0 5px;
+      border-right: none;
+    }
+    .chooseSize {
+      font-size: 0.8rem;
+      border-radius: 0 5px 5px 0;
+    }
+    .options {
+      .full,
+      .regular,
+      .small {
+        font-size: 0.8rem;
+        padding: 3px 10px;
+      }
+    }
+    .showUp {
+      scale: 1;
+    }
+  }
+  .description {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  .author {
+    padding: $smallPadding;
+    font-size: 0.8rem;
+  }
+  .createTime {
+    padding: 0 1rem 2rem;
+    font-size: 0.8rem;
+  }
+  .picTag {
+    padding: 0 1rem;
+    .tags {
+      padding: 0.3rem 0.6rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+}

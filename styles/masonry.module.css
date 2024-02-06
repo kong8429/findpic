@@ -1,0 +1,53 @@
+.myMasonryGrid {
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+
+.myMasonryGridColumn {
+  padding-left: 2rem; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.myMasonryGridColumn > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .myMasonryGrid {
+    margin-left: -10px; /* gutter size offset */
+  }
+  .myMasonryGridColumn {
+    padding-left: 1rem; /* gutter size */
+  }
+  .myMasonryGridColumn > div {
+    /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .myMasonryGrid {
+    margin-left: -5px; /* gutter size offset */
+  }
+  .myMasonryGridColumn {
+    padding-left: 0.5rem; /* gutter size */
+  }
+  .myMasonryGridColumn > div {
+    /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .myMasonryGrid {
+    margin-left: -5px; /* gutter size offset */
+  }
+  .myMasonryGridColumn {
+    padding-left: 0.3rem; /* gutter size */
+  }
+  .myMasonryGridColumn > div {
+    /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 0.3rem;
+  }
+}/*# sourceMappingURL=masonry.module.css.map */

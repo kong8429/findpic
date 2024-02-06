@@ -1,0 +1,110 @@
+.container {
+  padding: 0 20rem;
+  min-height: 70vh;
+  margin-bottom: 3rem;
+}
+.container .pic {
+  position: relative;
+  border-radius: 15px;
+  width: 100%;
+}
+.container .pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.container .pic .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7215686275));
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.1s;
+}
+.container .pic .mask:hover {
+  opacity: 1;
+}
+.container .pic .mask .picLink {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.container .pic .mask .author {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.container .pic .mask .author .usernameLink {
+  display: flex;
+  align-items: center;
+}
+.container .pic .mask .author .usernameLink img {
+  border-radius: 50px;
+  width: 36px;
+}
+.container .pic .mask .author .usernameLink span {
+  margin-left: 0.5rem;
+  color: rgb(210, 210, 210);
+}
+
+.loading {
+  font-size: 2rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  animation: rotate 0.5s infinite;
+}
+
+.message {
+  margin-top: 5rem;
+  color: rgba(143, 143, 143, 0.7215686275);
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 5rem;
+  }
+  .container .pic .mask .author {
+    bottom: 0.2rem;
+    left: 0.2rem;
+  }
+  .container .pic .mask .author .usernameLink img {
+    border-radius: 50px;
+    width: 20px;
+  }
+  .container .pic .mask .author .usernameLink span {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    color: rgb(210, 210, 210);
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}/*# sourceMappingURL=picStyles.module.css.map */
