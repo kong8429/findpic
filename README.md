@@ -7,13 +7,13 @@
     git clone https://github.com/kong8429/findpic.git
 
 ###### 建立.env(需要申請 Unsplash 的 API KEY)
-API_KEY = "Unsplash 的 API KEY"
+    API_KEY = "Unsplash 的 API KEY"
 
 ###### 安裝套件
-npm install
+    npm install
 
 ###### 執行專案
-npm run dev
+    npm run dev
 
 ###### 開啟專案
-http://localhost:3000/
+    http://localhost:3000/
